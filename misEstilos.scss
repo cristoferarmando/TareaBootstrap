@@ -5,4 +5,37 @@
 @import "src/main/mybootstrap";
 
 //Más estilos propios
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,500&display=swap');
+
+
+h5{
+    font-family: 'Jost', sans-serif;
+}
+
+#tarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+#jumbo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.card-img-overlay{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 50px;
+    align-content: flex-end;
+    justify-content: center;
+}
 

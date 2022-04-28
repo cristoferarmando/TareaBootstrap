@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Techno Solutions</title>
 
         <!--Incorporar librerias Bootstrap-->
 
@@ -26,50 +26,87 @@
     <!--Librerias CSS-->
     
 </head>
-<body>
+<body background="public/imagenes/Overlay2.jpg">
  
     <!--Menu de la página web-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Logo empresa img fluid</a>
+          <a class="navbar-brand" href="#">
+              <img src="public/imagenes/Logo.png" width="50px" height="50px" class="img-fluid" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  Techno Solutions
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#tarjetas">Servicios brindados</a></li>
+                  <li><a class="dropdown-item" href="#jumbo">Casos de éxito</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#accordionExample">Contáctanos</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link" href="#banner">¿Quienes somos?</a>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
 
+      <!--Banner inicio-->
+      <div class="card bg-dark text-white" id="banner">
+        <img src="public/imagenes/Overlay.jpg" width="px" height="700px" class="img-fluid" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Techno Solutions S.A.</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural <br> lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text">Last updated 3 mins ago</p>
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+          </p>
+        </div>
+      </div>
+
+      <!--Principales servicios brindados-->
+      <section id="tarjetas">
+
+        <div class="card" style="width: 18rem;">
+            <img src="public/imagenes/Desarrollosoftware.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Desarrollo de Software <br> a la medida</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="public/imagenes/consultorias.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Consultorías personalizadas</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="public/imagenes/Infraestructura.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Infraestructura</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </section>
+
       <!--Jumbotron-->
-      <div class="jumbotron jumbotron-fluid">
+      <section id="jumbo">
+      <div class="jumbotron jumbotron-fluid w-28">
           <div class="container">
-              <h1 class="display-3">Fluid jumbo heading</h1>
+            <img src="public/imagenes/casoexito1.jpg" width="550px" height="700px" class="img-fluid" alt="...">
+              <h1 class="display-3">Casos de éxito</h1>
               <p class="lead">Jumbo helper text</p>
               <hr class="my-2">
               <p>More info</p>
@@ -79,7 +116,37 @@
           </div>
       </div>
 
-      <!--Cards-->
+      <div class="jumbotron jumbotron-fluid w-28">
+        <div class="container">
+            <img src="public/imagenes/casoexito2.jpg" width="550px" height="700px" class="img-fluid" alt="...">
+            <h1 class="display-3">Casos de éxito</h1>
+            <p class="lead">Jumbo helper text</p>
+            <hr class="my-2">
+            <p>More info</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+      <!--Cóntactos-->
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Contáctanos
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Whatsapp Facebook Instagram Gmail</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
 </body>
 </html>
