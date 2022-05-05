@@ -7,26 +7,60 @@
 //Más estilos propios
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
 
+//icons
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
 
-h5{
+//
+*{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+#navbarSupportedContent{
+    font-family: 'Kumbh Sans';
+}
+
+h2{
+    font-family: 'Kumbh Sans', nth($listfonts, 3);
+    &:hover{
+        color:$mydark;
+    }
+}
+
+.card-text{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.lead{
+    color:$mydark;
+}
+
+.card-title{
     font-family: 'Jost', sans-serif;
+
+    &:hover{
+        color:$mylight;
+    }
 }
 
 #tarjetas{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    
+    @include setflex(row, space-around);
     padding: 10px;
-    justify-content: space-around;
+    
 }
 
 #jumbo{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 10px;
-    justify-content: space-around;
+    @include setflex(row, space-around);
+        padding: 10px;
+        font-family:'Jost', sans-serif;
+        color:$mydark;
 }
 
 .card-img-overlay{
@@ -39,3 +73,57 @@ h5{
     justify-content: center;
 }
 
+#contacto{
+    @include setflex (row, space-around);
+    background-color: $myinfo;
+    padding: 20px;
+}
+
+.btn{
+    &-menu{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+
+    &:hover{
+        color: $myprimary;
+    }
+    }
+
+    &-primary{
+        background-color: $mylight;
+        border-color: none;
+        font-family: 'Kumbh Sans';
+
+        &:hover{
+            background-color:$myinfo;
+        }
+    }
+}
+
+.card{
+    background-color: $mydark;
+}
+
+
+.ttl{
+    &-xs{
+        @include setittle ('Jost', nth($listfonts, 2), bolder);
+
+        &:hover{
+            color:$mydark;
+        }
+    }
+}
+
+.container{
+    @include setittle ('Jost', nth($listfonts, 2), bolder);
+}
+
+.collapse{
+    &-navbar-collapse{
+        @include setittle ('Jost', nth($listfonts, 2), bolder);
+        color:$myprimary;
+    }
+}

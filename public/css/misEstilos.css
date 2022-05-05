@@ -6,6 +6,8 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11959,8 +11961,42 @@ fieldset:disabled .btn {
   }
 }
 
-h5, .h5 {
+* {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+#navbarSupportedContent {
+  font-family: 'Kumbh Sans';
+}
+
+h2, .h2 {
+  font-family: "Kumbh Sans", 15px;
+}
+
+h2:hover, .h2:hover {
+  color: #eef2f9;
+}
+
+.card-text {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.lead {
+  color: #eef2f9;
+}
+
+.card-title {
   font-family: 'Jost', sans-serif;
+}
+
+.card-title:hover {
+  color: #043c5d;
 }
 
 #tarjetas {
@@ -11973,9 +12009,10 @@ h5, .h5 {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 10px;
+  text-align: left;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 10px;
 }
 
 #jumbo {
@@ -11988,9 +12025,12 @@ h5, .h5 {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 10px;
+  text-align: left;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 10px;
+  font-family: 'Jost', sans-serif;
+  color: #eef2f9;
 }
 
 .card-img-overlay {
@@ -12010,5 +12050,75 @@ h5, .h5 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: left;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #17788d;
+  padding: 20px;
+}
+
+.btn-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px;
+  margin: 10px;
+}
+
+.btn-menu:hover {
+  color: #3cb4c4;
+}
+
+.btn-primary {
+  background-color: #043c5d;
+  border-color: none;
+  font-family: 'Kumbh Sans';
+}
+
+.btn-primary:hover {
+  background-color: #17788d;
+}
+
+.card {
+  background-color: #eef2f9;
+}
+
+.ttl-xs {
+  font-family: "Jost";
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.ttl-xs:hover {
+  color: #eef2f9;
+}
+
+.container {
+  font-family: "Jost";
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.collapse-navbar-collapse {
+  font-family: "Jost";
+  font-size: 25px;
+  font-weight: bolder;
+  color: #3cb4c4;
 }
 /*# sourceMappingURL=misEstilos.css.map */

@@ -6,3 +6,19 @@ $mylight:     #043c5d;
 $mydark:      #eef2f9;
 
 $myBgColorLight: turquoise;
+
+$listfonts: 45px, 25px, 15px;
+
+@mixin setflex ($dir, $just){
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: $just;
+}
+
+@mixin setittle ($font, $ize, $weight) {
+    font-family: $font;
+    font-size: $ize;
+    font-weight: $weight;
+}
